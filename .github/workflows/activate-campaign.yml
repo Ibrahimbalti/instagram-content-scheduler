@@ -1,0 +1,78 @@
+name: Activate approved Instagram campaign
+on:
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: 'Explicit owner approval for the fixed 26 Nov–25 Dec 2026 campaign'
+        type: string
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: instagram-30-day-publishing
+  cancel-in-progress: false
+jobs:
+  activate:
+    if: >-
+      github.event.repository.private == false &&
+      github.repository == 'Ibrahimbalti/instagram-content-scheduler' &&
+      github.event.inputs.confirmation == 'ACTIVATE_APPROVED_30_POSTS'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Validate original assets and safety tests
+        run: python -m unittest discover -s tests -v
+      - name: Activate only the approved campaign flags
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          from datetime import datetime, timezone
+          from collections import Counter
+          p = Path('campaign.json')
+          text = p.read_text(encoding='utf-8')
+          original = text.replace('"enabled": true', '"enabled": false', 1).replace('"content_approved": true', '"content_approved": false', 1)
+          raw = original.encode('utf-8')
+          blob_sha = hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest()
+          if blob_sha != 'b5c750aa2ded1c237cc30650cf8525cb3650510e':
+              raise SystemExit('Campaign differs from the reviewed content; activation stopped.')
+          before = json.loads(text)
+          assert os.environ['GITHUB_REPOSITORY'] == 'Ibrahimbalti/instagram-content-scheduler'
+          assert before['expected_repository'] == 'Ibrahimbalti/instagram-content-scheduler'
+          assert before['expected_instagram_username'] == 'md_ibrahim07_official'
+          assert before['timezone'] == 'Asia/Karachi'
+          assert len(before['posts']) == 30
+          assert sum(len(x['media']) for x in before['posts']) == 70
+          assert Counter(x['format'] for x in before['posts']) == {'CAROUSEL': 20, 'FEED_POST': 10}
+          assert before['posts'][0]['publish_at'] == '2026-11-26T21:00:00+05:00'
+          assert before['posts'][-1]['publish_at'] == '2026-12-25T21:00:00+05:00'
+          if datetime.now(timezone.utc) >= datetime.fromisoformat(before['posts'][0]['publish_at']):
+              raise SystemExit('The approved start time has passed; do not silently change the schedule.')
+          changed = text.replace('"enabled": false', '"enabled": true', 1).replace('"content_approved": false', '"content_approved": true', 1)
+          after = json.loads(changed)
+          assert after['enabled'] is True and after['content_approved'] is True
+          for key, value in before.items():
+              if key not in ('enabled', 'content_approved'):
+                  assert after[key] == value, 'Unapproved campaign change'
+          p.write_text(changed, encoding='utf-8')
+          print('Approved flags enabled. All 30 captions, 70 media records, account and dates are unchanged.')
+          print('No Instagram requests made. Automatic posting still needs the repository activation variable.')
+          PY
+      - name: Commit approval flags without changing content
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add campaign.json
+          if git diff --cached --quiet; then
+            echo 'Approved campaign flags were already set.'
+          else
+            git commit -m 'Activate owner-approved 30-day Instagram campaign; preserve all content and dates'
+            git push origin HEAD:main
+          fi
