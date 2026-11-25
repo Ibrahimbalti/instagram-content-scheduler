@@ -42,4 +42,4 @@ jobs:
         shell: bash
         run: |
           case "$MODE" in check|preflight|publish) ;; *) exit 2 ;; esac
-          python publisher.py --mode "$MODE"
+          python publisher_facebook.py --mode "$MODE"
