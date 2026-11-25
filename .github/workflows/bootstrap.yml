@@ -1,0 +1,92 @@
+name: Import approved content
+on:
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: instagram-content-install
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.event.repository.private == false && github.repository == 'Ibrahimbalti/instagram-content-scheduler'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Download and verify the approved credential-free bundle
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          from urllib.request import Request, urlopen
+          from urllib.parse import urlparse
+          from io import BytesIO
+          import hashlib, json, os, zipfile
+          source = json.loads(Path('bootstrap-source.json').read_text())
+          if urlparse(source['url']).hostname != 'backend.composio.dev':
+              raise RuntimeError('Unexpected bundle source')
+          if Path('campaign.json').exists():
+              existing = json.loads(Path('campaign.json').read_text())
+              if existing.get('enabled') or existing.get('content_approved'):
+                  raise RuntimeError('Refusing to replace an active or approved campaign')
+          if Path('state/ledger.json').exists():
+              if json.loads(Path('state/ledger.json').read_text()).get('entries'):
+                  raise RuntimeError('Refusing to replace publishing history')
+          request = Request(source['url'], headers={'User-Agent': 'InstagramContentBootstrap/1.0'})
+          with urlopen(request, timeout=90) as response:
+              data = response.read(30000001)
+          if len(data) > 30000000 or hashlib.sha256(data).hexdigest() != source['sha256']:
+              raise RuntimeError('Bundle size or checksum mismatch')
+          allowed = {'publisher.py', 'campaign.json', 'tests/test_safety.py', 'state/ledger.json', 'README.md', 'CONTENT_CALENDAR.md', '.gitignore', '.env.example', 'validation-provenance.json'}
+          root = Path.cwd().resolve()
+          with zipfile.ZipFile(BytesIO(data)) as archive:
+              if sum(item.file_size for item in archive.infolist()) > 30000000:
+                  raise RuntimeError('Expanded bundle is too large')
+              for item in archive.infolist():
+                  if item.is_dir():
+                      continue
+                  if not item.filename.startswith(source['prefix']):
+                      raise RuntimeError('Unexpected archive layout')
+                  relative = PurePosixPath(item.filename[len(source['prefix']):])
+                  if relative.is_absolute() or '..' in relative.parts:
+                      raise RuntimeError('Unsafe archive path')
+                  if relative.parts and relative.parts[0] == '.github':
+                      continue
+                  name = str(relative)
+                  is_asset = len(relative.parts) == 2 and relative.parts[0] == 'assets' and name.endswith('.jpg')
+                  if name not in allowed and not is_asset:
+                      raise RuntimeError('Unexpected file in bundle')
+                  destination = (root / name).resolve()
+                  if not destination.is_relative_to(root):
+                      raise RuntimeError('Unsafe extraction destination')
+                  destination.parent.mkdir(parents=True, exist_ok=True)
+                  destination.write_bytes(archive.read(item))
+          campaign = json.loads(Path('campaign.json').read_text())
+          if campaign.get('enabled') is not False or campaign.get('content_approved') is not False:
+              raise RuntimeError('Imported campaign must remain disabled')
+          if campaign['expected_repository'] != os.environ['GITHUB_REPOSITORY']:
+              raise RuntimeError('Wrong destination repository')
+          if len(campaign['posts']) != source['post_count']:
+              raise RuntimeError('Incorrect post count')
+          if sum(len(post['media']) for post in campaign['posts']) != source['media_count']:
+              raise RuntimeError('Incorrect image count')
+          print('Verified and imported 30 draft posts and 70 images; Instagram publishing is OFF.')
+          PY
+      - name: Run offline safety tests only
+        run: |
+          python -m unittest discover -s tests -v
+          python publisher.py --mode check
+      - name: Commit the approved public content without enabling publication
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets campaign.json publisher.py tests state/ledger.json README.md CONTENT_CALENDAR.md .gitignore .env.example validation-provenance.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add approved 30-post campaign, 70 graphics and tested disabled publisher'
+            git push origin HEAD:main
+          fi

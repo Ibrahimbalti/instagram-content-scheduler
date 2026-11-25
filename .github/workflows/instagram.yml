@@ -1,0 +1,45 @@
+name: Instagram 30-day publisher
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'check = offline validation; preflight = read-only credential check; publish = approved due post only'
+        type: choice
+        options: [check, preflight, publish]
+        default: check
+  schedule:
+    - cron: '0 16 * * *'
+    - cron: '30 17 * * *'
+permissions: {}
+concurrency:
+  group: instagram-30-day-publishing
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: >-
+      github.event.repository.private == false &&
+      (github.event_name == 'workflow_dispatch' || vars.ENABLE_INSTAGRAM_PUBLISHING == 'true')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate or publish
+        env:
+          MODE: ${{ github.event.inputs.mode || 'publish' }}
+          ENABLE_INSTAGRAM_PUBLISHING: ${{ vars.ENABLE_INSTAGRAM_PUBLISHING }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          case "$MODE" in check|preflight|publish) ;; *) exit 2 ;; esac
+          python publisher.py --mode "$MODE"
