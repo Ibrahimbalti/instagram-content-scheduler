@@ -1,9 +1,10 @@
 {
   "entries": {
     "1": {
-      "status": "publish_intent",
+      "status": "published",
       "caption_sha256": "2b07d7f7f51496892f1611b135df7a6c938940a64b4fc875cdfe9d122986d33d",
       "container_id": "18118460402016138",
+      "media_id": "18107294864157776",
       "source": "user_confirmed_early_test"
     }
   }
