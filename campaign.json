@@ -1,6 +1,6 @@
 {
-  "enabled": false,
-  "content_approved": false,
+  "enabled": true,
+  "content_approved": true,
   "expected_repository": "Ibrahimbalti/instagram-content-scheduler",
   "expected_instagram_username": "md_ibrahim07_official",
   "timezone": "Asia/Karachi",
