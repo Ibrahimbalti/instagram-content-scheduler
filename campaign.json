@@ -1,0 +1,600 @@
+{
+  "enabled": false,
+  "content_approved": false,
+  "expected_repository": "Ibrahimbalti/instagram-content-scheduler",
+  "expected_instagram_username": "md_ibrahim07_official",
+  "timezone": "Asia/Karachi",
+  "graph_api_version": "v25.0",
+  "posts": [
+    {
+      "day": 1,
+      "publish_at": "2026-11-26T21:00:00+05:00",
+      "caption": "I'm Muhammad Ibrahim, a Senior Frontend Engineer with 4+ years of experience. Since April 2026, I've been Lead Frontend Engineer at AgencyOS, working remotely on runmyagency.app for Allstate agency owners.\n\nThe frontend work spans multi-tenant workflows, six-role access control interfaces, PayPal subscription flows, and XLSX/CSV imports. The stack is React, Vite, TypeScript and Tailwind CSS, with a Django backend.\n\nIf your SaaS needs frontend leadership, the conversation should start with users, roles and workflows—not just a list of components.\n\nDM BUILD with your product, stage and biggest frontend bottleneck.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-01-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. I build SaaS workflows, not just screens. Lead Frontend Engineer at AgencyOS Swipe for the engineering.",
+          "sha256": "4f76b57808fa1baf5de409a10ae4d60d39ba44513959c83724b308f412c0e92b"
+        },
+        {
+          "path": "assets/day-01-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Lead Frontend Engineer at AgencyOS React + Vite + TypeScript; Django backend Multi-tenant workflows, six roles, subscriptions and imports",
+          "sha256": "f17f9c72a9bb4a03e3742d9c346af755038cfd4d91785be4b6d5ccd969bca32f"
+        },
+        {
+          "path": "assets/day-01-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM BUILD with your product, stage and biggest frontend bottleneck.",
+          "sha256": "a7bc49f60fea5284ebfd1b2e7d7c30ec4a78f0246150b28633ce3cbec3365c4a"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "publish_at": "2026-11-27T21:00:00+05:00",
+      "caption": "A performance case study from my work at Quant Data Solutions: I reduced E-Mareez Care's Largest Contentful Paint from 4.2s to 1.8s using Next.js server-side rendering.\n\nThat is a project result, not a promise that SSR fixes every slow application. The right starting point is the route, device, network and user journey that are actually slow.\n\nBefore changing rendering strategy, capture a baseline. Afterward, compare equivalent conditions and check for regressions. A fast homepage does not prove the entire product is fast.\n\nDM AUDIT with your URL, stack and slowest user journey.\n\n#WebPerformance #CoreWebVitals #NextJS #ReactDeveloper #FrontendEngineering",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-02-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LCP: 4.2 seconds to 1.8 seconds. E-Mareez Care: LCP 4.2s → 1.8s Swipe for the engineering.",
+          "sha256": "04c055e92b185d89dddf699afc49ba497aa2da753d8361c18bb297e7a62e7b6a"
+        },
+        {
+          "path": "assets/day-02-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. E-Mareez Care: LCP 4.2s → 1.8s Implementation: Next.js server-side rendering Compare the same route, device and test conditions",
+          "sha256": "36cc58aec2f2c4dc3f7632132391bd4d07338558841e151107a2940fec6f365d"
+        },
+        {
+          "path": "assets/day-02-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM AUDIT with your URL, stack and slowest user journey.",
+          "sha256": "3ed89c2b64856bfed2bfd7db90cf2d12e24b3aa5846fb8390aa0ea218c8dd2cf"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "publish_at": "2026-11-28T21:00:00+05:00",
+      "caption": "For RealGigPay, my deployment work included a Next.js application on a Hostinger Ubuntu VPS, Nginx reverse proxying, PM2 process management, and GitHub Actions CI/CD.\n\nThe practical lesson: an application is more than a successful local build. A team also needs a repeatable release process and a clear understanding of how the application runs in production.\n\nThese infrastructure details apply to RealGigPay specifically—not automatically to every project in my portfolio. My portfolio and GitHub are linked in my profile.\n\nDM BUILD with your application, hosting setup and deployment goal.\n\n#NextJS #TypeScript #CICD #WebDevelopment #SaaSDevelopment",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-03-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. A Next.js app needs a production path. RealGigPay: Next.js on a Hostinger Ubuntu VPS Swipe for the engineering.",
+          "sha256": "958fdc8b00cfd861da71358b042c0fa8693cd44de0af6d1c1ef0587c4440d263"
+        },
+        {
+          "path": "assets/day-03-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. RealGigPay: Next.js on a Hostinger Ubuntu VPS Nginx reverse proxy + PM2 process management GitHub Actions for CI/CD",
+          "sha256": "2ae4c99a29738ac9b4674d12796d8f1aae5d999aad95eb5afa5a606eebdab215"
+        },
+        {
+          "path": "assets/day-03-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM BUILD with your application, hosting setup and deployment goal.",
+          "sha256": "8177077f49dad39a0092a3a2776d4af378ffb89ad2b5c8efa197c26c731acf2b"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "publish_at": "2026-11-29T21:00:00+05:00",
+      "caption": "Founders: review the dashboard after the happy path.\n\nWhat happens when a new account has no data? When an API is slow? When an import partially fails? When a user's role changes halfway through a session?\n\nA polished dashboard needs clear loading, empty, error and permission states—not just attractive charts. Those states affect whether users can complete the job they came to do.\n\nThis is the kind of product detail I focus on as a React and TypeScript engineer.\n\nSave this checklist for your next SaaS design review.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-04-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Your SaaS dashboard is not done when it looks good. Design loading, empty and error states Swipe for the engineering.",
+          "sha256": "8bbab9e38d92677c37c56f251295dadb3f0a5f3eba84fde3f46f470181da0482"
+        },
+        {
+          "path": "assets/day-04-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Design loading, empty and error states Explain permission limits and recovery paths Review complete workflows, not isolated screens",
+          "sha256": "0cb0ac3f1c801fe5cd73ba463cccd00c65a24ee5c22e0b8c8cdbddc1e81f07b2"
+        },
+        {
+          "path": "assets/day-04-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. KEEP THIS FOR YOUR NEXT REVIEW Save this checklist for your next SaaS design review.",
+          "sha256": "9d6afec8a6e015e5bc4ee496971b4d3cca8b40760dc554888416d49e144e86eb"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "publish_at": "2026-11-30T21:00:00+05:00",
+      "caption": "A React interface can hide actions a user should not take. It cannot be the security boundary.\n\nIn a role-based SaaS product, the server must authorize protected operations. The frontend should reflect those permissions clearly and handle rejected requests without leaving users confused.\n\nMy AgencyOS work includes interfaces for six-role access control. The important distinction is between the experience a role sees and the authorization the backend enforces.\n\nA permission matrix is often a better starting point than another settings screen.\n\nDM BUILD if your SaaS needs clearer role-based workflows.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-05-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Hiding a button is not access control. Server authorization is the security boundary Swipe for the engineering.",
+          "sha256": "adf48434be7f02315f2ab4cea9b8229d30f88cd3a237755a3f0d076f19f38cfe"
+        },
+        {
+          "path": "assets/day-05-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Server authorization is the security boundary Frontend states should reflect allowed actions Test every role against every protected workflow",
+          "sha256": "fe47a0a6c0ee8d850d49c51e97b8940a6d3ef1e024b4813a0cd63f48ab8545db"
+        },
+        {
+          "path": "assets/day-05-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM BUILD if your SaaS needs clearer role-based workflows.",
+          "sha256": "8db1c4449b798cad50000b7ad547e8f4c4e3a19eb7a854b895d0aff720f330de"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "publish_at": "2026-12-01T21:00:00+05:00",
+      "caption": "At Quant Data Solutions, I replaced an 8-second legacy table for US client CompWizards with an AG Grid implementation supporting 10,000+ rows.\n\nThe CV result does not specify an after-load time, so I will not invent one.\n\nFor a data-heavy React interface, the questions include virtualization, filtering, sorting, network payloads, and whether work belongs on the client or server. A library helps, but the dataset and user workflow still determine the architecture.\n\nDM AUDIT with your row count and slowest table interaction.\n\n#WebPerformance #CoreWebVitals #NextJS #ReactDeveloper #FrontendEngineering",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-06-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. 10,000+ rows: engineer the table, not just the cells. CompWizards: replaced an 8-second legacy table Swipe for the engineering.",
+          "sha256": "cdc47a9f32b23f2c0a8eb63be83df17efd19cdc3f4be674ff9b183b8bc60b8bd"
+        },
+        {
+          "path": "assets/day-06-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. CompWizards: replaced an 8-second legacy table AG Grid implementation supporting 10,000+ rows Choose virtualization and data loading to fit the workflow",
+          "sha256": "e7dc5269d0a6b8a9002c145167e0e7f5e2effbe96c12329aee039586ea7cf3de"
+        },
+        {
+          "path": "assets/day-06-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM AUDIT with your row count and slowest table interaction.",
+          "sha256": "6d50c50bf2c08586e0e6c7700ccc434b18fd81a2ab7d3fbc7c30e0d13ca13c59"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "publish_at": "2026-12-02T21:00:00+05:00",
+      "caption": "A slow frontend does not automatically need a rewrite.\n\nFirst identify the problem: initial loading, a slow interaction, an oversized response, unnecessary work, or a confusing workflow. Then measure a representative path and prioritize the change with the clearest user impact.\n\nA new framework can be expensive if the original bottleneck is still there afterward.\n\nFor founders, the useful question is not \"Which stack is trending?\" It is \"What is stopping users from completing the important task?\"\n\nFollow for practical React and Next.js engineering decisions.\n\n#WebPerformance #CoreWebVitals #NextJS #ReactDeveloper #FrontendEngineering",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-07-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Before you rebuild your React app, measure. Find the slow user journey Measure before choosing a fix Prioritize impact before a framework rewrite FOLLOW FOR PRODUCTION FRONTEND NOTES",
+          "sha256": "dd2bdb00ca10d1db4c1310bdcabf06adeec7d51db2dd8794eee16b4252befe77"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "publish_at": "2026-12-03T21:00:00+05:00",
+      "caption": "React profiling is useful when it explains something users actually feel.\n\nStart with the slow interaction, reproduce it, and use profiling to locate expensive work. Then check the rest of the path: request timing, payload size, layout work and unnecessary updates.\n\nAdding memoization everywhere can make code harder to maintain without fixing the real issue. Optimization should be supported by a before-and-after observation, not by the number of hooks added.\n\nThe goal is a responsive workflow, not a screenshot of a profiler.\n\nSave this before your next React performance investigation.\n\n#WebPerformance #CoreWebVitals #NextJS #ReactDeveloper #FrontendEngineering",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-08-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. A React re-render is a clue—not a business diagnosis. Reproduce the slow interaction first Swipe for the engineering.",
+          "sha256": "b18d70c9ea1a41bfcf47cf031b16370bde2ef6a215be2df174a79cad1507cbcf"
+        },
+        {
+          "path": "assets/day-08-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Reproduce the slow interaction first Profile React and inspect the surrounding request path Validate the improvement instead of memoizing everything",
+          "sha256": "1cf3ed00072a084fbe9a570f30aa3703f6ea1ba2de454e617f52ccdf186c5f64"
+        },
+        {
+          "path": "assets/day-08-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. KEEP THIS FOR YOUR NEXT REVIEW Save this before your next React performance investigation.",
+          "sha256": "aacca01eb3791e5c101270311afec1e74b8e92208ee11523ea7b6049be136f56"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "publish_at": "2026-12-04T21:00:00+05:00",
+      "caption": "During my time at Quant Data Solutions, my work improved Lighthouse scores from 55 to 88 across five production applications.\n\nThe honest way to present that result matters: it is a 33-point increase in a lab score. It is not proof of a specific revenue lift, a guarantee for another product, or a complete real-user performance report.\n\nFor a useful case study, keep the testing conditions visible and explain the engineering decisions behind the change. Results build trust when their limits are clear.\n\nDM AUDIT if you want to investigate your frontend performance baseline.\n\n#WebPerformance #CoreWebVitals #NextJS #ReactDeveloper #FrontendEngineering",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-09-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Lighthouse 55 → 88. Thirty-three points, not a slogan. Lighthouse scores: 55 → 88 across five production apps Swipe for the engineering.",
+          "sha256": "7cb285e5e861083e017b8a02a10e697a56c83d5f749b196f78f9344dda9c7ce5"
+        },
+        {
+          "path": "assets/day-09-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Lighthouse scores: 55 → 88 across five production apps A 33-point lab-score increase Do not confuse a lab score with a revenue guarantee",
+          "sha256": "e47d28ee64c579b0f37959329b8088fcb68af3c3fa52e3cf789f3ab8619cbf07"
+        },
+        {
+          "path": "assets/day-09-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM AUDIT if you want to investigate your frontend performance baseline.",
+          "sha256": "82583fd2af1a1ea855c5511bf7656c2355d4837b99628e6ff14b98337c57dd2d"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "publish_at": "2026-12-05T21:00:00+05:00",
+      "caption": "A 200 response is not the end of a user journey.\n\nCan the user tell that a save completed? Is an empty list explained? Can a failed update be retried safely? Does the interface show stale data after a mutation?\n\nIn React products, data fetching and interface states need to be designed together. My past work includes RTK Query, React Query and OpenAPI-backed workflows across role-based dashboards.\n\nA reliable product makes progress, failure and recovery understandable—not just technically available.\n\nDM BUILD with the workflow your users keep getting stuck in.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-10-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Your API can succeed while your interface fails. Show clear success and stale-data states Swipe for the engineering.",
+          "sha256": "34254b9426021d38a09c85d9d551277d349e7a8c3f096159705323f590bbb10c"
+        },
+        {
+          "path": "assets/day-10-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Show clear success and stale-data states Design safe retries and useful errors Treat fetching and interface behavior as one workflow",
+          "sha256": "aa1f5770f20f2146cce0ab84bb1338fb51200d64331dc40f4fbd1ec558e57e8e"
+        },
+        {
+          "path": "assets/day-10-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM BUILD with the workflow your users keep getting stuck in.",
+          "sha256": "b4de011378654185b5f913ba5c13c1a1dc8282a855f7e22951f814f165c24a45"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "publish_at": "2026-12-06T21:00:00+05:00",
+      "caption": "Subscription interfaces need to explain more than a successful payment.\n\nThink about pending states, declined payments, cancellation, changed plans, and the relationship between payment status and product access. The backend remains responsible for trusted payment events and authorization.\n\nMy experience includes Stripe integrations at AlphaRages and PayPal subscription flows at AgencyOS.\n\nFor founders, the practical review is simple: walk through the subscription lifecycle, not only the checkout screen.\n\nDM BUILD if your SaaS subscription journey needs attention.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-11-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. A payment integration is more than a Pay button. Design pending, failed and cancelled subscription states Swipe for the engineering.",
+          "sha256": "ecb15b7c8e46ef54b11b06823b56756a51add86d9f0307245025f6127e165442"
+        },
+        {
+          "path": "assets/day-11-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Design pending, failed and cancelled subscription states Keep trusted payment events and access control on the server Review the lifecycle after checkout",
+          "sha256": "3217c425bd25bdc2264c792a4ea79e3fc3130dcca8b5d1c5d18418b24250f65e"
+        },
+        {
+          "path": "assets/day-11-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM BUILD if your SaaS subscription journey needs attention.",
+          "sha256": "109e3b67f58548899837162adf780a5a66ed4ad2d97a31411ea3d1c34692a7aa"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "publish_at": "2026-12-07T21:00:00+05:00",
+      "caption": "A practical accessibility starting point: complete one important workflow using only the keyboard.\n\nCan you reach the controls? See where focus is? Open and close a dialog? Understand validation errors? Return to the right place after an action?\n\nMy past work includes WCAG 2.1 AA accessibility delivery for three US enterprise clients. A quick keyboard pass is useful, but it is not a complete conformance assessment. Automated checks alone are not enough either.\n\nDM AUDIT with the workflow you want reviewed for accessibility.\n\n#Accessibility #WCAG #FrontendEngineering #ReactJS #InclusiveDesign",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-12-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Try your SaaS without touching the mouse. Check keyboard access and visible focus Swipe for the engineering.",
+          "sha256": "fd6471d9c74ec28076277601ee5b940a6f303b740208b89ae715ed22aa02a9b5"
+        },
+        {
+          "path": "assets/day-12-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Check keyboard access and visible focus Review dialogs, labels and validation messages A quick test is not a complete WCAG assessment",
+          "sha256": "b73068e7b8aedfc873f133394c9762169ff28307e3dbc1d2819130001d22cb97"
+        },
+        {
+          "path": "assets/day-12-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM AUDIT with the workflow you want reviewed for accessibility.",
+          "sha256": "78a57208ae5fab81489d40542d9b14b222745026d0289590fc16b8665043f6c4"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "publish_at": "2026-12-08T21:00:00+05:00",
+      "caption": "An import feature is not finished when a clean sample file works.\n\nUsers need to understand expected columns, invalid values, duplicates and partial failures. If some records fail, they should know what happened and what can be corrected without guessing.\n\nAgencyOS includes XLSX/CSV batch-import workflows in my frontend scope. A useful design principle for any import is to make the outcome understandable before asking users to retry.\n\nThe goal is a recoverable workflow, not simply a file-upload button.\n\nSave this for your next batch-import feature review.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-13-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. CSV imports need a recovery path. Explain expected columns and validation rules Swipe for the engineering.",
+          "sha256": "662e74d8c9f3acefaaf43d6e540a937cf87ec9b6e9c32087041ea5c2115b1c65"
+        },
+        {
+          "path": "assets/day-13-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Explain expected columns and validation rules Make failed rows and partial outcomes understandable Design a safe path to correct and retry",
+          "sha256": "4d49ad3703abc922d0a1e8e5e894bab68196786a55743c0dc87a43892daa505d"
+        },
+        {
+          "path": "assets/day-13-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. KEEP THIS FOR YOUR NEXT REVIEW Save this for your next batch-import feature review.",
+          "sha256": "8e5e780428a927b9a955653372e0b84c61dd629663dbf4871f940556f6bef0a3"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "publish_at": "2026-12-09T21:00:00+05:00",
+      "caption": "You do not need a perfect specification to start a consulting conversation. You do need context.\n\nSend the product URL or a private walkthrough, the current stack, the user problem, the scope you have in mind, and your timeline. If you have a budget range, include it so the conversation stays realistic.\n\n\"Build me a dashboard\" leaves too much room for assumptions. \"Help our agency managers complete this three-step workflow\" is a stronger starting point.\n\nDM BUILD with those details to start a project conversation.\n\n#FrontendConsultant #ReactDeveloper #NextJS #SaaSFounders #WebDevelopment",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-14-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The fastest way to get a useful frontend quote. Share the product, stack and user problem Explain scope, timeline and budget range Describe the workflow—not just the screen DM BUILD to discuss your project",
+          "sha256": "028fcf3ae14fd9cfaf7ae9a00bf71f51b1b41069b8189fcef7df379f9f4d74b0"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "publish_at": "2026-12-10T21:00:00+05:00",
+      "caption": "In a multi-tenant application, switching organizations is not just changing a label in the header.\n\nReview query keys, client-side state, persisted preferences and in-flight requests. Data from one tenant must not be accidentally displayed in another tenant's interface.\n\nThe server must independently enforce tenant isolation. Frontend cache hygiene supports the user experience; it does not replace backend security.\n\nThis is an architectural review worth doing before an organization switcher reaches production.\n\nDM BUILD if your multi-tenant frontend needs an architecture review.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-15-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Multi-tenant SaaS needs tenant-aware state. Review cache keys and state when a tenant changes Swipe for the engineering.",
+          "sha256": "ce6deb04fa6a68a6dcb72d07abff1f6034069430e5a2e91fdf7c4edac65f9c25"
+        },
+        {
+          "path": "assets/day-15-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Review cache keys and state when a tenant changes Handle stale and in-flight requests deliberately Server-side tenant isolation is still required",
+          "sha256": "1aff29d7b963052439476d0063e9f5d2536d2b82ba78f25363b1a023564ea22c"
+        },
+        {
+          "path": "assets/day-15-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM BUILD if your multi-tenant frontend needs an architecture review.",
+          "sha256": "737e9d05876bfa87bf90a7796ba6d8b5e347fd6f37124a18f7fde3f4e5b31bf8"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "publish_at": "2026-12-11T21:00:00+05:00",
+      "caption": "A selected tab and a list of invoices do not have the same lifecycle.\n\nUI state describes local interaction. Server state has freshness, fetching, errors and synchronization concerns. Blurring those responsibilities can make a React application harder to reason about.\n\nMy experience includes React Query and RTK Query, but the important part is the boundary—not collecting libraries. Choose a tool because it matches the problem and the team's workflow.\n\nFollow for production-minded React architecture, without tool-of-the-week hype.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-16-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Server state and UI state are different jobs. Separate local interaction state from remote data Swipe for the engineering.",
+          "sha256": "a30e7fe3ed302557a818804beaf2595f243082480b06e01100fd8f5533f498d7"
+        },
+        {
+          "path": "assets/day-16-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Separate local interaction state from remote data Make freshness, errors and invalidation explicit Choose a tool to fit the lifecycle",
+          "sha256": "8f7682076396a3fd2b64e284888682478b4ca7af4cb5506c19d650394e27efe8"
+        },
+        {
+          "path": "assets/day-16-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. MORE PRODUCTION FRONTEND NOTES Follow for production-minded React architecture, without tool-of-the-week hype.",
+          "sha256": "fbb5c1a5b3fb10df1186b2f1842ccee9cdaaba6d3796a4a344993c4ef3ab694f"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "publish_at": "2026-12-12T21:00:00+05:00",
+      "caption": "At AlphaRages, I worked as a Senior Frontend Developer from August 2025 to March 2026, redesigning a hiring platform across 5+ role-based dashboards.\n\nThe work involved React, RTK Query, React Query, Stripe and OpenAPI.\n\nA multi-dashboard product needs consistency without pretending every role has the same job. Shared patterns should help users navigate, while role-specific workflows should remain clear.\n\nThis is the kind of scope that makes frontend engineering a product discipline—not just screen implementation.\n\nDM HIRE with the product and role if you need senior frontend ownership.\n\n#SeniorFrontendEngineer #ReactDeveloper #TypeScript #RemoteWork #SoftwareEngineering",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-17-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Five-plus dashboards. One coherent product. AlphaRages: redesigned 5+ role-based dashboards Swipe for the engineering.",
+          "sha256": "06aed147fa93bd0fd09433ca4d8645522769bbf2f6e54d2d2b5ef6e6932d2243"
+        },
+        {
+          "path": "assets/day-17-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. AlphaRages: redesigned 5+ role-based dashboards React, query tooling, Stripe and OpenAPI Balance shared patterns with role-specific workflows",
+          "sha256": "a1ce989201a4617a2780c2d1d6f5fae293324e58ef293f6b539f1a674c00026f"
+        },
+        {
+          "path": "assets/day-17-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM HIRE with the product and role if you need senior frontend ownership.",
+          "sha256": "aa2f1ad0c510831a119d877a355ebe2d6907e4b743be2bdc36a5b61dd29edaaa"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "publish_at": "2026-12-13T21:00:00+05:00",
+      "caption": "The October 6, 2026 Next.js 16.4 release notes discuss Cache Components, developer tooling, and compilation and bundle improvements.\n\nFor an existing product, I would turn release news into a migration checklist: read version-specific guidance, test the important routes, verify caching behavior, and compare builds before release.\n\nThis post is about that specific release—not a claim that 16.4 will still be the newest version when you read it.\n\nOfficial source: nextjs.org/blog/next-16-4\n\nSave this approach for your next Next.js upgrade.\n\n#NextJS #TypeScript #CICD #WebDevelopment #SaaSDevelopment",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-18-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Next.js 16.4: read the migration plan before the hype. Use version-specific migration guidance Swipe for the engineering.",
+          "sha256": "603d4f82628ec2c5c5e1ff6e52970e58897c5e6a3caf7ddb07aaecd37c947001"
+        },
+        {
+          "path": "assets/day-18-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Use version-specific migration guidance Test important routes and cache behavior Compare builds before production release",
+          "sha256": "15f98222cf2dfe2aeeb35028103e7356ce866e0af5ccd8156ffcc05ade59dc49"
+        },
+        {
+          "path": "assets/day-18-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. KEEP THIS FOR YOUR NEXT REVIEW Save this approach for your next Next.js upgrade.",
+          "sha256": "2c02d520f3d0ed36cbe59b85e8df0d9b4ea92013c2f7340dedbc8f0c627b1594"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "publish_at": "2026-12-14T21:00:00+05:00",
+      "caption": "Single-page applications can feel fast on the first page and slow after navigation.\n\nGoogle's October 2026 web.dev announcement describes experimental CrUX metrics that include soft navigations in single-page applications. That is a useful prompt to inspect route transitions—not only the initial document load.\n\nKeep experimental reporting distinct from your established metrics. This is not a claim that your existing Core Web Vitals score has changed.\n\nSource: web.dev/blog/crux-experimental-soft-navs\n\nDM AUDIT if your React app feels slow after navigation.\n\n#WebPerformance #CoreWebVitals #NextJS #ReactDeveloper #FrontendEngineering",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-19-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Fast first load. Slow route change. Different investigation. Investigate route transitions as well as initial loading Swipe for the engineering.",
+          "sha256": "61f4bea3f9b2216a729ec9294b00263f0b76655d48740a92429f9b2e14caa8df"
+        },
+        {
+          "path": "assets/day-19-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Investigate route transitions as well as initial loading CrUX now has experimental soft-navigation metrics Keep experimental and established reporting distinct",
+          "sha256": "220c5392d6b3a29d204cbe9396bbc9157aca837d701ce21a9eacc1414bdce8f4"
+        },
+        {
+          "path": "assets/day-19-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM AUDIT if your React app feels slow after navigation.",
+          "sha256": "0d4dc4f8e7e50f693c5ecd8c6e56a55ec8548846e37f1cd8a401832262bcc7ce"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "publish_at": "2026-12-15T21:00:00+05:00",
+      "caption": "TypeScript helps you reason about code before it runs. It does not automatically prove that a network response matches the type you wrote.\n\nAt important boundaries, decide how data is validated, how unexpected values are handled, and what the user sees when something is wrong. Good types and runtime checks solve related but different problems.\n\nFor a SaaS frontend, the real goal is a predictable workflow when the outside world does not match the happy path.\n\nSave this for your next TypeScript API integration.\n\n#NextJS #TypeScript #CICD #WebDevelopment #SaaSDevelopment",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-20-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. TypeScript does not validate an API response at runtime. Static types do not check network payloads by themselves Swipe for the engineering.",
+          "sha256": "2ae6a5837c91e40eb61eba69c4b892af94303afad61a344905e454e34c22b535"
+        },
+        {
+          "path": "assets/day-20-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Static types do not check network payloads by themselves Validate important external-data boundaries Design a useful response to invalid data",
+          "sha256": "fce1aca6d817fc30021ef8f2d4cd7097bc75aa82f17025c82d65b66be70345a3"
+        },
+        {
+          "path": "assets/day-20-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. KEEP THIS FOR YOUR NEXT REVIEW Save this for your next TypeScript API integration.",
+          "sha256": "941ed1b1440c60130fbe1cfffedd073c3a26316022e29cabfaa084e3f5eff8ea"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "publish_at": "2026-12-16T21:00:00+05:00",
+      "caption": "Founders often have more possible features than engineering capacity.\n\nBefore expanding the roadmap, identify the workflow that must work for the product to be useful. Then ask whether users can complete it reliably and understand what to do next.\n\nSometimes the right investment is a new frontend foundation. Sometimes it is a focused repair to onboarding, a dashboard or a payment flow. Scope the decision around the user problem before choosing the size of the project.\n\nDM BUILD with your product stage and the workflow that matters most.\n\n#FrontendConsultant #ReactDeveloper #NextJS #SaaSFounders #WebDevelopment",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-21-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Does your MVP need a rebuild—or one reliable workflow? Find the workflow that makes the product useful Separate essential fixes from expansion Scope around the user problem DM BUILD to discuss your project",
+          "sha256": "b0506b06184a7fc03b3e704fe56beefd67b49a9faf29ecb826805099f34f0477"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "publish_at": "2026-12-17T21:00:00+05:00",
+      "caption": "If keyboard access, meaningful labels and understandable errors are left until the end, they become expensive surprises.\n\nPut accessibility expectations into the design review, implementation checklist and acceptance criteria. Pair automated checks with manual review of real tasks.\n\nMy WCAG 2.1 AA delivery experience includes work for three US enterprise clients. That experience is a reason to investigate carefully—not to promise conformance from a single score or plugin.\n\nDM AUDIT to discuss an accessibility review for your frontend.\n\n#Accessibility #WCAG #FrontendEngineering #ReactJS #InclusiveDesign",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-22-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Accessibility belongs in the acceptance criteria. Include accessibility in design and acceptance criteria Combine automated checks with manual task review Avoid treating one score as a conformance guarantee DM AUDIT to discuss your project",
+          "sha256": "bc8c5b4c4df4e35c0876582c5ec0f1a738a3c7727eb8c8e829aa5c285f4c8117"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "publish_at": "2026-12-18T21:00:00+05:00",
+      "caption": "A generated interface can be a useful starting point. It still needs someone accountable for permissions, accessibility, real data, loading states and maintainability.\n\nBefore calling an AI-assisted prototype production-ready, walk through an actual user task and the ways it can fail. Review the code and data boundaries, not only the visual result.\n\nFor founders, the value is not choosing between AI and engineers. It is using tools while keeping responsibility for the product.\n\nFollow for practical SaaS engineering decisions beyond the demo.\n\n#SaaSDevelopment #ReactJS #TypeScript #FrontendEngineering #SaaSFounders",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-23-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. AI-generated UI still needs engineering ownership. Review permissions, data boundaries and error states Test accessibility and real user tasks Keep a human accountable for production quality FOLLOW FOR PRODUCTION FRONTEND NOTES",
+          "sha256": "7d933caa51275e15d11700b8a01d027a8743e825cab9cf250c0904772647b80b"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "publish_at": "2026-12-19T21:00:00+05:00",
+      "caption": "Try this before writing a long frontend feature list:\n\n\"Our [type of user] needs to [complete a task], but currently gets stuck at [specific point].\"\n\nThen add the current stack, a walkthrough, the impact on the team, and your timeline.\n\nThat is enough to start a productive scoping discussion. It helps distinguish a design issue, a frontend implementation problem, an API dependency, and a broader product decision.\n\nDM BUILD with that one-sentence brief.\n\n#FrontendConsultant #ReactDeveloper #NextJS #SaaSFounders #WebDevelopment",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-24-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. A better project brief starts with one stuck user. Name the user and the task Show the point where the workflow breaks Add stack, impact and timeline DM BUILD to discuss your project",
+          "sha256": "453650d73d47d8f6aebf17f0dca7d927bb956b0fa855507f39fa862740afecdb"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "publish_at": "2026-12-20T21:00:00+05:00",
+      "caption": "My background is a BS in Software Engineering from COMSATS University Islamabad, followed by production frontend work across several teams.\n\nAt Quant Data Solutions, I progressed from Junior to a more senior role after promotion in 15 months. Later, I worked on a multi-dashboard hiring platform at AlphaRages. Today, I lead frontend work at AgencyOS.\n\nThe common thread is ownership: understanding the workflow, making trade-offs, and delivering maintainable interfaces—not simply adding more tools to a bio.\n\nFollow for engineering lessons from production work, not only tutorials.\n\n#SeniorFrontendEngineer #ReactDeveloper #TypeScript #RemoteWork #SoftwareEngineering",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-25-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. From software engineering graduate to frontend lead. BS Software Engineering, COMSATS University Islamabad Swipe for the engineering.",
+          "sha256": "59b563572e3813b83c2cbe9d9b81fd6296d8da10967e2a82efd9923e5569de2b"
+        },
+        {
+          "path": "assets/day-25-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. BS Software Engineering, COMSATS University Islamabad Promoted from Junior in 15 months at Quant Data Solutions Now Lead Frontend Engineer at AgencyOS",
+          "sha256": "7894aa213a474412cfab62fc9c2fa79c6640c7eee1dc43a974c383de44dcf440"
+        },
+        {
+          "path": "assets/day-25-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. MORE PRODUCTION FRONTEND NOTES Follow for engineering lessons from production work, not only tutorials.",
+          "sha256": "4f5b63f8c5bed58007a3355ad5b40fb515f8d2a4ad90ba8a0b41d46204f23465"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "publish_at": "2026-12-21T21:00:00+05:00",
+      "caption": "My project portfolio includes AgencyOS, RealGigPay, StaffedUp, Lucid Data and North Dry Fruits.\n\nDifferent projects involve different scopes. For example, the Ubuntu VPS, Nginx, PM2 and GitHub Actions deployment details I share apply specifically to RealGigPay.\n\nIf you are evaluating an engineer, ask what they owned, what constraints mattered, and how the work was validated. A list of logos or technologies is not a substitute for those answers.\n\nPortfolio: muh-ibrahim-se.netlify.app\n\nDM HIRE with the role or project you want to discuss.\n\n#SeniorFrontendEngineer #ReactDeveloper #TypeScript #RemoteWork #SoftwareEngineering",
+      "format": "CAROUSEL",
+      "media": [
+        {
+          "path": "assets/day-26-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. My portfolio is a starting point—not the whole conversation. Projects: AgencyOS, RealGigPay, StaffedUp, Lucid Data and North Dry Fruits Swipe for the engineering.",
+          "sha256": "434ca65782aa48bfeedd78da0d67d68f235f85337ee0a86e3b7757bf7c251c78"
+        },
+        {
+          "path": "assets/day-26-slide-02.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. The engineering behind it. Projects: AgencyOS, RealGigPay, StaffedUp, Lucid Data and North Dry Fruits Ask about ownership, constraints and validation Deployment details vary by project",
+          "sha256": "3df62820a7afad513e48f45a4a51ac7e7bce654919dbd0293533e665b002e184"
+        },
+        {
+          "path": "assets/day-26-slide-03.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. LET'S DISCUSS YOUR PRODUCT DM HIRE with the role or project you want to discuss.",
+          "sha256": "cfe4a3bbbaa9f02d6aca939a317dc69f1c3ac15fc0d7eee73a2e6dbfdfb80d8c"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "publish_at": "2026-12-22T21:00:00+05:00",
+      "caption": "A successful deployment is not the same as a safe release process.\n\nBefore shipping, review environment variables, secret handling, HTTPS, process health, application logs, and the rollback path. Decide who checks the critical workflow after release.\n\nMy RealGigPay deployment experience includes Next.js, an Ubuntu VPS, Nginx, PM2 and GitHub Actions. The checklist here is general engineering guidance, not a claim that every project uses identical infrastructure.\n\nSave this before your next production deployment.\n\n#NextJS #TypeScript #CICD #WebDevelopment #SaaSDevelopment",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-27-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. A deployment checklist should include the way back. Review configuration, secrets and HTTPS Check process health and application logs Know the rollback path before release SAVE THIS CHECKLIST",
+          "sha256": "527c753799e6427a853b36844fb66b6a04f76e42e3fb947bee65d9b45d546db6"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "publish_at": "2026-12-23T21:00:00+05:00",
+      "caption": "Start with the problem you can observe.\n\nIf users wait, investigate performance. If they cannot complete tasks, inspect usability and accessibility. If a team cannot safely extend the product, review architecture and maintainability.\n\nA redesign may be the right outcome—but it should not be the default diagnosis for every issue. A useful audit narrows the problem and helps prioritize the next decision.\n\nMy focus is React, Next.js and TypeScript products.\n\nDM AUDIT with your URL and the issue you can observe.\n\n#FrontendConsultant #ReactDeveloper #NextJS #SaaSFounders #WebDevelopment",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-28-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. Do you need a frontend audit or a redesign? Waiting users: investigate performance Blocked users: inspect usability and accessibility Fragile delivery: review architecture and maintainability DM AUDIT to discuss your project",
+          "sha256": "ff0f9f1719aae7a78b86423319a2088f3759055ee3a0ec927c0bcf02a6215f21"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "publish_at": "2026-12-24T21:00:00+05:00",
+      "caption": "A new team member should not have to discover the release process by trial and error.\n\nA useful handover explains local setup, environment configuration, key workflows, important architectural decisions, testing expectations and deployment steps. It should also make known limitations visible.\n\nFor client work, delivery includes the next person who maintains the product. Clear documentation does not remove every dependency, but it makes ownership easier to transfer.\n\nSave this as a checklist for your next frontend project handover.\n\n#FrontendConsultant #ReactDeveloper #NextJS #SaaSFounders #WebDevelopment",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-29-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. A good frontend handover reduces guesswork. Document setup, workflows and architectural decisions Explain tests, deployment and known limitations Write for the person who maintains it next SAVE THIS CHECKLIST",
+          "sha256": "7e20232f10fb173a0de6640019595915e96951d4dd6ddf4a4e35f3d01c049902"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "publish_at": "2026-12-25T21:00:00+05:00",
+      "caption": "I'm Muhammad Ibrahim, a Senior Frontend Engineer with 4+ years of experience in React, Next.js and TypeScript, currently leading frontend work at AgencyOS.\n\nI am interested in conversations about SaaS frontend delivery, performance and accessibility reviews, complex dashboards, and production deployment work.\n\nBased in Islamabad, Pakistan, with remote collaboration experience. My portfolio, GitHub and LinkedIn are linked in my profile.\n\nThe best starting point is your product and the user problem—not a generic request for \"a website.\"\n\nDM BUILD with your product, scope, timeline and budget range.\n\n#FrontendConsultant #ReactDeveloper #NextJS #SaaSFounders #WebDevelopment",
+      "format": "FEED_POST",
+      "media": [
+        {
+          "path": "assets/day-30-slide-01.jpg",
+          "alt_text": "Branded educational graphic by Muhammad Ibrahim. What frontend problem is slowing your product down? React, Next.js and TypeScript SaaS frontends, dashboards and engineering reviews Islamabad, Pakistan; remote collaboration experience DM BUILD to discuss your project",
+          "sha256": "df4898a0cd943f97236d621fac9eadd9520424e17bf405637e9040ade6461531"
+        }
+      ]
+    }
+  ]
+}

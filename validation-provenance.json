@@ -1,0 +1,8 @@
+{
+  "offline_tests_passed": 12,
+  "instagram_live_tested": false,
+  "instagram_posts_published": 0,
+  "paid_calls_for_setup": 0,
+  "billing_source": "https://docs.github.com/en/billing/concepts/product-billing/github-actions",
+  "public_standard_runner_only": true
+}
